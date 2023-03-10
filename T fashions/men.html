@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> T Fashions </title>
+<!-- fav icon image -->
+    <link rel="Shortcut icon" href="images/fav icon/favicon-16x16.png">
+<!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- jquery.js -->
+<script src="jquery-3.6.3.min.js"></script>
+<script src="jquery.js"> </script>
+
+<!-- fontawseome -->
+<link rel="stylesheet" href="fontawesome/all.min.css">
+<script src="javascript/fontawesome/all.min.js"></script>
+<!--custom carosual-->
+<link rel="stylesheet" href="css/carousal/owl.carousel.min.css">
+<link rel="stylesheet" href="css/carousal/owl.theme.default.min.css">
+
+<!-- style.css -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <!-- preloader -->
+   <div id="preloader">
+    <div id="preloader_status"></div>    
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top p-1">
+
+        <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html"><span>T</span>-Fashions</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ">
+                <!-- me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; -->
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="men.html">Men</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="women.html">Women</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="kids.html">Kids</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Profile
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal"> Login </a></li>
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"> Sign up </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Have trouble logging in? <h6>Get Help</h6></a></li>
+                </ul>
+            </li>
+           <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Account & Lists
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#"> Your Account </a></li>
+                <li><a class="dropdown-item" href="#"> Your Orders </a></li>
+                <li><a class="dropdown-item" href="#"> Wish List </a></li>
+                <li><a class="dropdown-item" href="#"> Gift Cards</a></li>
+                <li><a class="dropdown-item" href="#"> Coupons </a></li>
+                
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Switch Account</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign Out </a></li>
+                </ul>
+            </li>
+            </ul>
+            <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search for products, brands and more  " aria-label="Search">
+            <button class="white8">Search</button>
+             </form>
+
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+        </div>
+        </div>
+    </nav>
+    <!-- navbar ENDS-->
+    <!-- home Video -->
+
+    <section id="home">
+    <video id="homevideo" poster="images/poster/home_video.jpg" autoplay muted loop>
+        <source src="home_video/Clothing - 1006.mp4" type="video/mp4">
+        <source src="home_video/home_video.webm" type="video/ogv">
+        <source src="home_video/home_video.ogv" type="video/webm">
+    </video>
+    <!-- overlay -->
+    <div id="overlay"></div>
+    <!-- home content -->
+    <div id="homecontent">
+
+        <div id="homecontent_inner" class="text-center">
+            
+            <div id="home_heading">
+                <p><span>T</span>-Fashion's</p><br><br>
+                <p>Men's <span>Store</span></p>
+            </div>
+
+    <div id="home_text">
+        <p>Style is a way to say who you are without having to speak</p>
+    </div>
+    <div id="home_btn">
+        <a class="btn btn-general btn-home" role="button" title="Start Now" href="#about"> Shop Now </a>
+    </div>
+    </div>
+    </div>
+
+    <!-- arrow down -->
+
+    <a href="#about" id="arrow-down">
+        <i class="fa-solid fa-angle-down"></i>
+    </a>
+    </section>
+    <!-- home Video End-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Account </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember My Account</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+
+        </div>
+        </div>
+    </div>
+<!-- Create Account Demo -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Create Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Frist Name</label>
+                    <input type="text" class="form-control" id="inputName">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputName">
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-5">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>
+                        Andhra Pradesh
+                    </option>
+                    <option>
+                        Telangana
+                    </option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="inputZip" class="form-label">Pincode</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- men -->
+<section id="product1" class="section-p1">
+    <h2>Men's Fashion Deal </h2>
+    <p>Summer Collection New Model Design</p>
+    <div class="pro-container">
+        <div class="pro-1"> 
+            <img src="images/new/23.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro-1"> 
+            <img src="images/new/24.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro-1"> 
+            <img src="images/new/25.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro-1"> 
+            <img src="images/new/26.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- designs -->
+
+<section id="product1" class="section-p1">
+    <h2>Feature Products</h2>
+    <p>Summer Collection New Model Design</p>
+    <div class="pro-container">
+        <div class="pro"> 
+            <img src="images/Designs/f1.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro"> 
+            <img src="images/Designs/f2.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro"> 
+            <img src="images/Designs/f3.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro"> 
+            <img src="images/Designs/f4.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro"> 
+            <img src="images/Designs/f5.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro"> 
+            <img src="images/Designs/f6.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Shirts </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro"> 
+            <img src="images/Designs/f7.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Women Trouser </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro"> 
+            <img src="images/Designs/f8.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astornaut Women Top </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.2999/-</h4>
+                <button class="white1"> Buy Now</button>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+    </div>
+</section>
+<!-- designs End -->
+
+<!-- contact -->
+
+<section id="contact">
+
+    <div class="content-box-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="contact-left">
+                        
+                        <div class="vertical-heading">
+                            
+                            <h5> Who We Are </h5>
+                            <h2>Get <br> In <strong>Touch</strong></h2>
+
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur in alias laudantium, </p>
+
+                        <div id="office">
+                            <h5>Address Title</h5>
+                            <ul class="office-details">
+
+                                <li> <span><i class="fa-solid fa-mobile-screen-button"></i></span> +91 9705717769 </li>
+                                <li> <span><i class="fa-solid fa-envelope"></i></span> support@T-Fashions.com</li>
+                                <li> <span><i class="fa-solid fa-location-dot"></i></span> 3-9, SaradaNagar, Anakapalli, Visakhapatnam, AndhraPradesh, India, 531001.    </li>
+
+                            </ul>
+                        </div>
+
+                        <ul class="social-list">
+                            
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="contact-right">
+
+                        <h4>Send Message</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aliquam</p>
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                      <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Your Name">
+
+                                    </div>
+                                 </div>
+                                 
+                                <div class="col-md-6"> 
+                                     <div class="form-group">
+
+                                    <input type="email" class="form-control" placeholder="Email Address">
+                                 </div>
+                             </div>
+                                <div class="col-md-6"> 
+                                     <div class="form-group-1">
+
+                                    <input type="number" class="form-control" placeholder="Mobile ">
+                                 </div>
+                            </div>
+                                <div class="col-md-6"> 
+                                     <div class="form-group-1">
+
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                     </div>
+                                 </div>
+                             </div>
+                             <br>
+                             <div class="form-group">
+
+                                <textarea class="form-control" placeholder="Message"> Message </textarea>
+
+                             </div>
+                             <br>
+                             <div id="blog-btn">
+
+                                <a class="btn btn-general btn-yellow" role="button" title="Submit" href="#">Submit</a>
+
+                             </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- contact End -->
+
+<!-- map -->
+<section id="map">
+
+  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.180589761062!2d82.98959331419182!3d17.68892709869566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39772ae0e51871%3A0x32c21b025c321d8d!2zMTfCsDQxJzIwLjIiTiA4MsKwNTknMzAuMSJF!5e0!3m2!1sen!2sin!4v1673249556736!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+
+
+</section>
+<!-- map End-->
+<!-- footer -->
+
+<footer>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <p>Copy Right &copy; 2023 All Rights Reserved by <span>T-Fashions</span></p>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+<!-- footer ENd -->
+
+ <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- owl carousal -->
+    <script src="javascript/carosual/owl.carousel.min.js"></script>
+
+    <!-- script.js -->
+
+    <script src="script.js"></script>
+
+
+
+
+    </body>
